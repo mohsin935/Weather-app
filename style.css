@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Times, serif ;
+    box-sizing: border-box;
+}
+
+.main-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    color: #810083;
+}
+
+body{
+    background: #222;
+    background-image: url("images/background\ image.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc ;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc ;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img{
+    width: 16px;
+}
+
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0 20px;
+ margin-top: 50px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity{
+    font-size: 28px;
+    margin-top: -6px;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+
+
+@media (max-width: 600px){
+    .card{
+        margin: 60px auto 0;
+        padding: 30px 25px;
+    }
+
+    .weather-icon{
+        width: 140px;
+    }
+
+    .weather h1{
+        font-size: 60px;
+    }
+
+    .weather h2{
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 400px){
+    .card{
+        width: 94%;
+        margin: 40px auto 0;
+        padding: 25px 18px;
+    }
+
+    .search input{
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .search button{
+        width: 50px;
+        height: 50px;
+    }
+
+    .weather-icon{
+        width: 110px;
+    }
+
+    .weather h1{
+        font-size: 46px;
+    }
+
+    .weather h2{
+        font-size: 26px;
+    }
+
+    .details{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+@media (max-width: 400px){
+    .footer{
+        font-size: 12px;
+    }
+}
+
+
+.footer{
+    text-align: center;
+    color: #ccc;
+    font-size: 14px;
+    margin: 30px auto 20px;
+    padding: 0 15px;
+}
+
+.footer a{
+    color: #020202;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+
+html, body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    margin: 100px auto 0;
+    /* baaki same rahega */
+}
+
+.footer{
+    margin-top: auto;
+    text-align: center;
+    color: #ffffff; 
+     /* 1bff02 */
+    font-size: 18px;
+    padding-bottom: 20px;
+}
